@@ -3,10 +3,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 24px;
+  
   height: 50vh;
   width: 100%;
   margin-top: 48px;
+}
+
+.content-principal>div{
+  width: 33%;
+  color: #fff;
+}
+
+.content-principal .image {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  
+} 
+
+.content-principal .image .content-image{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  line-height: 0.5rem;
+}
+
+.content-principal .image .content-image a{
+  text-decoration: none;
+  font-size: 1.0rem;
 }
 
 .content-principal .image1 {
