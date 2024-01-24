@@ -1,0 +1,31 @@
+.content-principal {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 24px;
+  height: 50vh;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.content-principal .image1 {
+  background-image: url('../../assets/images/cash-macanaya-7tY-UnBr4Mo-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.content-principal .image2 {
+  background-image: url('../../assets/images/igor-omilaev-AS3yZ8H2lZ4-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.content-principal .image3 {
+  background-image: url('../../assets/images/jonny-caspari-d21CGQKtJh8-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
