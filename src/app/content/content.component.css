@@ -10,7 +10,7 @@
 }
 
 .content-principal>div{
-  width: 33%;
+  max-width: 100%;
   color: #fff;
 }
 
@@ -51,4 +51,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img{
+  width: 50%;
+  max-width: 100%;
+  opacity: 50%;
 }
