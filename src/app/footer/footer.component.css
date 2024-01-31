@@ -1,0 +1,43 @@
+.footer-container {
+  background: #F8F9FA;
+  height: 220px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+nav .menu-footer-list {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+nav .menu-footer-list li a:hover{
+  height: 100px;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+
+.copy{
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
+  
+}
+.copy p {
+  font-size: 12px;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+}

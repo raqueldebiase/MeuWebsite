@@ -10,3 +10,16 @@
   list-style: none;
   gap: 2rem;
 }
+
+.menu-top .menu-top-list li a{
+  cursor: pointer;
+}
+
+.menu-top .menu-top-list li a:hover {
+  height: 100px;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+}

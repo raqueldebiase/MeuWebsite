@@ -57,10 +57,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .about-img img{
   width: 50%;
   max-width: 100%;
   opacity: 50%;
+  border-radius: 25px;
 }
