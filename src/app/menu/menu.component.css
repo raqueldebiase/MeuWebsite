@@ -9,10 +9,18 @@
   justify-content: space-between;
   list-style: none;
   gap: 2rem;
+
+}
+
+.menu-top .menu-top-list li {
+  cursor: pointer;
+  
 }
 
 .menu-top .menu-top-list li a{
   cursor: pointer;
+  text-decoration: none;
+  
 }
 
 .menu-top .menu-top-list li a:hover {
