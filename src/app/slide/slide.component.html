@@ -1,0 +1,12 @@
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let item of items">
+      <div class="item-slide">
+        <a href="{{ item.link }}" target="_blank">
+          <img [src]="item.imageUrl" alt="{{ item.altText }}">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
