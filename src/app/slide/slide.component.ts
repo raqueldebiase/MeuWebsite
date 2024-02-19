@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -58,12 +58,7 @@ export class SlideComponent implements AfterViewInit {
       scrollbar: {
         el: '.swiper-scrollbar',
       },
-      loop: true // Ativa o loop contínuo do slider
-    });
-    const swiperBreak = new Swiper('.swiper', {
-      // Default parameters
-      slidesPerView: 1,
-      spaceBetween: 10,
+      effect: 'slide',
       // Responsive breakpoints
       breakpoints: {
         // when window width is >= 320px
@@ -81,7 +76,9 @@ export class SlideComponent implements AfterViewInit {
           slidesPerView: 4,
           spaceBetween: 40
         }
-      }
-    })
+      },
+      loop: true // Ativa o loop contínuo do slider
+    });
+    
   }
 }

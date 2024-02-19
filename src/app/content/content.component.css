@@ -64,5 +64,9 @@
   width: 50%;
   max-width: 100%;
   opacity: 50%;
-  border-radius: 25px;
+  border-radius: 50%;
+}
+
+#projects{
+  overflow: auto;
 }

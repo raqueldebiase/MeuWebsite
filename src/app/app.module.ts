@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlideComponent } from './slide/slide.component';
+import { FormularioComponent } from './formulario/formulario.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { SlideComponent } from './slide/slide.component';
     MenuComponent,
     ContentComponent,
     FooterComponent,
-    SlideComponent
+    SlideComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,

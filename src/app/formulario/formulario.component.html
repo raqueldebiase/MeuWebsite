@@ -1,0 +1,27 @@
+<form action="/enviar" method="post" class="row">
+  <div class="col-12 my-5">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="d-grid my-4">
+          <label for="nome">Your name </label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="d-grid my-4">
+          <label for="email">Your email </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="d-grid my-4">
+          <label for="email">What you are interested </label>
+          <input type="text" id="interested" name="interested" required>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 d-grid">
+        <label for="mensagem" class="message">Message</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 text-center my-5">
+    <button type="submit">Send</button>
+  </div>
+</form>
