@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlideComponent } from './slide/slide.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './formulario/formulario.component';
 
 
@@ -25,6 +26,7 @@ import { FormularioComponent } from './formulario/formulario.component';
     AppRoutingModule,
     BsDropdownModule.forRoot(),
     ButtonsModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

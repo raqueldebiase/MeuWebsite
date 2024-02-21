@@ -1,15 +1,17 @@
-form input {
+form input, select {
   border: none;
   background-color: #F8F9FA;
   padding: 12px 0;
   margin-top: 8px;
 }
 
+
+
 form textarea {
   border: none;
   background-color: #F8F9FA;
   height: 268px !important;
-
+  padding: 24px;
 }
 
 form button {
