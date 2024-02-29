@@ -21,16 +21,22 @@ import 'swiper/css/pagination';
 export class SlideComponent implements AfterViewInit {
   //String que será usada para gerar os slides no template
   items =  [
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/profile-2.jpg', altText:'profile'},
+    {link1: 'https://www.google.com/', link2:'https://g1.globo.com/', imageUrl: 'assets/images/projeto1.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto2.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto3.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto4.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto5.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto6.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto7.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto8.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto9.png', altText:'profile'},
   ];
+
+  isHovered: boolean[] = new Array(this.items.length).fill(false);
+
+  setHover(index: number, value: boolean): void {
+    this.isHovered[index] = value;
+  }
 
   
   ngAfterViewInit(){
@@ -41,7 +47,7 @@ export class SlideComponent implements AfterViewInit {
     }, 0);
     const swiper = new Swiper('.swiper-container',{
       slidesPerView: 10,
-      spaceBetween: 1,
+      spaceBetween: 0.5,
       allowTouchMove: false,
       navigation: {
         nextEl: '.swiper-button-next',

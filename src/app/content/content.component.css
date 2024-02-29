@@ -1,72 +1,53 @@
-.content-principal {
-  
+.apresentacao h2{
+  font-size: 84px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200
+}
+
+.social-medias ul{
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   
-  height: 50vh;
-  width: 100%;
-  margin-top: 48px;
 }
 
-.content-principal>div{
-  max-width: 100%;
-  color: #fff;
-}
-
-.content-principal .image {
-  display: flex;
-  justify-content: start;
-  align-items: end;
+.social-medias span {
+  width: 60%;
   
-} 
-
-.content-principal .image .content-image{
-  padding-left: 20px;
-  padding-bottom: 20px;
-  line-height: 0.5rem;
 }
 
-.content-principal .image .content-image a{
+.social-medias ul li a{
   text-decoration: none;
-  font-size: 1.0rem;
 }
 
-.content-principal .image1 {
-  background-image: url('../../assets/images/cash-macanaya-7tY-UnBr4Mo-unsplash.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+.social-medias ul li a img{
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  
 }
 
-.content-principal .image2 {
-  background-image: url('../../assets/images/igor-omilaev-AS3yZ8H2lZ4-unsplash.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.content-principal .image3 {
-  background-image: url('../../assets/images/jonny-caspari-d21CGQKtJh8-unsplash.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+.social-medias ul li a:hover img{
+  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
 }
 
 .about-img {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
   
 }
 
-.about-img img{
-  width: 50%;
-  max-width: 100%;
-  opacity: 50%;
-  border-radius: 50%;
-}
 
 #projects{
   overflow: auto;
+}
+
+.tecnologias ul li {
+  list-style: none;
+  border: 1px solid #000;
+  padding: 14px 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-right: 30px;
+  box-shadow: 2px 2px #444444;
 }

@@ -3,28 +3,37 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="d-grid my-4">
-          <label>Your name </label>
+          <label>Seu nome </label>
           <input formControlName="name" type="text" id="nome" name="nome" required>
         </div>
         <div class="d-grid my-4">
-          <label>Your email </label>
+          <label>Seu e-mail </label>
           <input formControlName="email" type="email" id="email" name="email" required>
         </div>
         <div class="d-grid my-4">
-          <label>What you are interested </label>
+          <label>O que te interessou? </label>
           <select formControlName="interest" type="text" id="interested" name="interested" required>
-            <option value="opção1">opção 1</option>
-            <option value="opção2">opção 2</option>
+            <option value="opção1">Desenvolvimento web</option>
+            <option value="opção2">Mobile</option>
+            <option value="opção2">Oportunidade de vaga</option>
+            <option value="opção2">Freelancer</option>
+
+
           </select>
         </div>
       </div>
       <div class="col-12 col-md-6 d-grid">
-        <label class="message">Message</label>
+        <label class="message">Mensagem</label>
         <textarea formControlName="message" id="mensagem" name="mensagem" rows="4" required></textarea>
       </div>
     </div>
   </div>
   <div class="col-12 text-center my-5">
-    <button type="submit">Send</button>
+    <ng-container *ngIf="!mostrarMensagem; else mensagemEnviada">
+      <button type="submit">Enviar</button>
+    </ng-container>
+    <ng-template #mensagemEnviada>
+      <p>Mensagem enviada com sucesso!</p>
+    </ng-template>
   </div>
 </form>

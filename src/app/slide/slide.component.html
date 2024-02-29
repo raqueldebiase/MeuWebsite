@@ -1,12 +1,16 @@
 <div class="swiper-container">
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let item of items">
-      <div class="item-slide">
+    <div class="swiper-slide" *ngFor="let item of items; let i = index">
+      <div class="item-slide" (mouseenter)="setHover(i, true)" (mouseleave)="setHover(i, false)">
         <a href="{{ item.link }}" target="_blank">
           <img [src]="item.imageUrl" alt="{{ item.altText }}">
         </a>
+        <div class="button-container" *ngIf="isHovered[i]">
+          <!-- Adicione seus botões aqui -->
+          <a href="{{ item.link1 }}"><img src="../../assets/images/github.svg" alt="github"></a>
+          <a href="{{ item.link2 }}"><img src="../../assets/images/globe-solid.svg" alt="website"></a>
+        </div>
       </div>
     </div>
-
   </div>
 </div>

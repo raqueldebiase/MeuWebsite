@@ -4,6 +4,10 @@
 
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/Raleway.zip');
+}
 
 :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
@@ -44,6 +48,11 @@
   body {
     margin: 0px;
     padding: 0px;
+    /*background: linear-gradient(to bottom, rgba(255, 138, 0, 0.2) 0%, rgba(229, 46, 113, 0.5) 10%, rgba(200, 160, 220, 0.3) 30%, white 100%);*/
+  }
+
+  * {
+    font-family: "Raleway", sans-serif;
   }
 
   h1 {

@@ -1,5 +1,42 @@
 .item-slide img {
  
-  width: 380px;
-  height: 380px;
+  width: 500px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 18px;
+  justify-content: start;
+  width: 100%;
+}
+
+.button-container a {
+  border-radius: 25px;
+  border: 1px solid #000000;
+  padding: 8px 16px;
+  background-color: #fff;
+  box-shadow: 1px 1px #444444;
+  text-decoration: none;
+  text-align: center;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container:hover a{
+  background-color: #fff;
+}
+
+.button-container a img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }

@@ -12,19 +12,21 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FormularioComponent implements OnInit{
 
   public form!: FormGroup;
+  mostrarMensagem: boolean = false;
 
   constructor(private formBuilder: FormBuilder) {}
   //inicializando o formulário
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      name: [''],
-      email: [''],
-      interest: [''],
-      message:['']
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      interest: ['', Validators.required],
+      message:['', Validators.required]
     });
   };
   
   public onSubmit() {
     console.log(this.form.value);
+    this.mostrarMensagem = true;
   }
 }
