@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url('./assets/Raleway.zip');
+  src: url('./assets/Raleway/static/Raleway-Regular.ttf');
 }
 
 :host {
