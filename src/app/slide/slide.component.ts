@@ -34,6 +34,7 @@ export class SlideComponent implements AfterViewInit {
         slidesPerView: 10,
         spaceBetween: 10,
         allowTouchMove: true,
+        simulateTouch: false,
         pagination: {
           el: '.swiper-pagination',
           clickable: true

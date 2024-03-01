@@ -48,7 +48,7 @@
   body {
     margin: 0px;
     padding: 0px;
-    /*background: linear-gradient(to bottom, rgba(255, 138, 0, 0.2) 0%, rgba(229, 46, 113, 0.5) 10%, rgba(200, 160, 220, 0.3) 30%, white 100%);*/
+    overflow-x: hidden;
   }
 
   * {
