@@ -53,7 +53,7 @@ export class SlideComponent implements AfterViewInit {
         breakpoints: {
           320: {
             slidesPerView: 1,
-            spaceBetween: 300,
+            spaceBetween: 50,
           },
           480: {
             slidesPerView: 1,
