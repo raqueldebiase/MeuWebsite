@@ -37,8 +37,10 @@
   align-items: end;
 }
 
-.about h2 {
-  font-size: 48px;
+
+h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 #projects{
@@ -56,8 +58,9 @@
 }
 
 @media screen and (max-width: 400px) {
-  .about h2 {
-    font-size: 36px;
+  h2 {
+    font-weight: 500;
+    font-size: 2.0rem;
   }
   .about p {
     font-size: 16px;

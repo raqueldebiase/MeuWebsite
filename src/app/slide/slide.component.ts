@@ -34,10 +34,6 @@ export class SlideComponent implements AfterViewInit {
         slidesPerView: 10,
         spaceBetween: 10,
         allowTouchMove: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
         pagination: {
           el: '.swiper-pagination',
           clickable: true
@@ -45,9 +41,6 @@ export class SlideComponent implements AfterViewInit {
         autoplay: {
           delay: 5000,
           disableOnInteraction: true
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
         },
         effect: 'slide',
         breakpoints: {
