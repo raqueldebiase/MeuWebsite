@@ -26,7 +26,9 @@ export class FormularioComponent implements OnInit{
   };
   
   public onSubmit() {
-    console.log(this.form.value);
-    this.mostrarMensagem = true;
+    if (this.form.valid) {
+      console.log(this.form.value);
+      this.mostrarMensagem = true;
+    }
   }
 }
