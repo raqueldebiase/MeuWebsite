@@ -1,26 +1,35 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()" class="row">
-  <div class="col-12 my-3 my-md-5">
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="row form">
+  <div class="col-12 mt-3 my-md-3">
     <div class="row">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 coluna1">
         <div class="d-grid ">
-          <label class="my-2">Seu nome </label>
+          <label class="my-3">Seu nome <span class="material-symbols-outlined">
+              emergency
+            </span></label>
           <input formControlName="name" type="text" id="nome" name="nome" placeholder="Insira aqui o seu nome" required>
         </div>
         <div class="d-grid ">
-          <label class="my-2">Seu e-mail </label>
+          <label class="my-3">Seu e-mail <span class="material-symbols-outlined">
+              emergency
+            </span></label>
           <input formControlName="email" type="email" id="email" name="email" placeholder="Insira aqui o seu e-mail" required>
         </div>
         <div class="d-grid ">
-          <label class="my-2">O que te interessou? </label>
+          <label class="my-3">O que te interessou? <span class="material-symbols-outlined">
+              emergency
+            </span></label>
           <input formControlName="interest" type="text" id="interested" name="interested" placeholder="Insira aqui o motivo do seu contato" required>
         </div>
       </div>
-      <div class="col-12 col-md-6 d-grid">
-        <label class="message my-2">Mensagem</label>
+      <div class="col-12 col-md-6 d-grid coluna2">
+        <label class="message my-3">Mensagem <span class="material-symbols-outlined">
+            emergency
+          </span></label>
         <textarea formControlName="message" id="mensagem" name="mensagem" rows="4" placeholder="Deixe aqui a sua mensagem" required></textarea>
       </div>
     </div>
   </div>
+  <p style="font-size: 12px;"><span class="material-symbols-outlined">emergency</span> Obrigatório</p>
   <div class="col-12 text-center my-5">
     <ng-container *ngIf="!mostrarMensagem; else mensagemEnviada">
       <button type="submit">Enviar</button>
