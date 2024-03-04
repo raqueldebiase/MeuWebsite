@@ -74,7 +74,7 @@ export class SlideComponent implements AfterViewInit {
             spaceBetween: 300
           }
         },
-        loop: true
+        loop: false
       });
     }, 0);
   }
