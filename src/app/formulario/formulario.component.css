@@ -54,6 +54,16 @@ form button:hover {
   margin-right: 12px;
 }
 
+.formEnviado{
+  font-weight: 400;
+}
+
+.formEnviado::after {
+  content: url('../../assets/images/shining.svg');
+  position: absolute;
+  top: -25px;
+}
+
 @media screen and (max-width: 767px) {
   .coluna1 input{
     margin-right: 0px;
