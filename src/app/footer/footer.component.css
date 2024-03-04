@@ -10,33 +10,51 @@
   
 }
 
-.footer-container h5 {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-nav .menu-footer-list {
+.social-medias ul{
   list-style: none;
   display: flex;
-  gap: 34px;
-  align-items: center;
+  gap: 4px;
 }
 
-nav .menu-footer-list li a{
-  list-style: none;
+.social-medias ul li a{
   text-decoration: none;
-  cursor: pointer;
 }
 
-nav .menu-footer-list li a:hover{
-  height: 100px;
-  background: linear-gradient(to right, #ff8a00, #e52e71);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
+.social-medias ul li a img{
+  width: 60px;
+  height: 60px;
+  padding: 8px;
 }
 
+/*
+.social-medias ul li a:hover img:not(.github){
+  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
+}*/
+
+li .github {
+  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 5px;
+}
+
+li .github:hover{
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  box-shadow: 0 0 0 1px #ff8a00, 0 0 0 1px #e52e71;
+  outline: 2px solid transparent;
+}
+
+li .linkedin:hover {
+  background: linear-gradient(to left, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 5px;
+}
 
 .copy{
   height: 45px;

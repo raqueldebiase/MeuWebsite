@@ -13,33 +13,6 @@
   color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
 }
 
-
-.social-medias ul{
-  list-style: none;
-  display: flex;
-  
-}
-
-.social-medias span {
-  width: 60%;
-  
-}
-
-.social-medias ul li a{
-  text-decoration: none;
-}
-
-.social-medias ul li a img{
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  
-}
-
-.social-medias ul li a:hover img{
-  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
-}
-
 .about-img {
   display: flex;
   justify-content: end;
