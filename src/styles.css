@@ -4,10 +4,20 @@
 
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+/*Google fonts */
 @font-face {
   font-family: 'Raleway';
   src: url('./assets/Raleway/static/Raleway-Regular.ttf');
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 14
+}
+
 
 :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
@@ -90,7 +100,7 @@
   }
 
   a:hover {
-    height: 100px;
+    
     background: linear-gradient(to right, #ff8a00, #e52e71);
     -webkit-background-clip: text;
     background-clip: text;

@@ -5,6 +5,15 @@
   line-height: 75%;
 }
 
+.meuNome {
+  font-weight: 600;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
+}
+
+
 .social-medias ul{
   list-style: none;
   display: flex;

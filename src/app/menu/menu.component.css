@@ -16,9 +16,10 @@
   justify-content: space-evenly;
   list-style: none;
   background-color: #D9D9D9;
-  padding: 12px;
-  border-radius: 25px;
-  
+  padding: 12px 30px;
+  border-radius:50px;
+  align-items: center;
+  gap: 18px;
 }
 
 .menu-top .menu-top-list li {
@@ -34,11 +35,21 @@
   font-size: 16px;
 }
 
-.menu-top .menu-top-list li a:hover {
-  height: 100px;
+.menu-top .menu-top-list li a:hover:not(.resume){
+  
   background: linear-gradient(to right, #ff8a00, #e52e71);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  
+}
+
+.resume {
+  outline: 1px solid #4E504E;
+  padding: 2px 12px;
+  border-radius: 50px;
+}
+
+.resume:hover {
+  box-shadow: 0 0 0 1px #ff8a00, 0 0 0 1px #e52e71;
+  outline: 1px solid transparent;
 }
