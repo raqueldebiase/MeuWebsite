@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SlideComponent } from './slide/slide.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './formulario/formulario.component';
+import { HttpClientModule } from '@angular/common/http';  
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     AppRoutingModule,
     BsDropdownModule.forRoot(),
     ButtonsModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

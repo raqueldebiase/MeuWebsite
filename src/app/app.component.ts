@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormServiceService } from './service/form-service.service';
 
 
 
@@ -16,23 +15,12 @@ export class AppComponent implements OnInit{
   interest = '';
   message= '';
 
-  constructor(private service: FormServiceService){
+  constructor(){
 
   }
 
   ngOnInit(): void {
-    this.service.name.subscribe(x=>{
-      this.name=x;
-    });
-    this.service.email.subscribe(x=>{
-      this.email=x;
-    });
-    this.service.interest.subscribe(x=>{
-      this.interest=x;
-    });
-    this.service.message.subscribe(x=>{
-      this.message=x;
-    });
+    
   }
 
 }
