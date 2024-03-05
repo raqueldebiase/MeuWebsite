@@ -11,10 +11,10 @@
 </main>
 
 <form name="formularioContacto" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="nome" />
-  <input type="email" name="email" />
-  <input type="text" name="interested" />
-  <textarea name="mensagem"></textarea>
+  <input type="text" name="nome" [value]="name" />
+  <input type="email" name="email" [value]="email" />
+  <input type="text" name="interested" [value]="interest" />
+  <textarea name="mensagem" [value]="message"></textarea>
 </form>
 
 <router-outlet></router-outlet>

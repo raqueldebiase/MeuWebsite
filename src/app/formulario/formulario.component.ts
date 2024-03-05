@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subject } from 'rxjs';
+import { FormServiceService } from '../service/form-service.service';
 
 
 @Component({
@@ -14,17 +15,12 @@ export class FormularioComponent implements OnInit{
 
   public form!: FormGroup;
 
-  public name: Subject<string> = new Subject<string>();
-  public email: Subject<string> = new Subject<string>();
-  public interest: Subject<string> = new Subject<string>();
-  public message: Subject<string> = new Subject<string>();
-
-
-  
   mostrarMensagem: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private service:FormServiceService) {}
+
   //inicializando o formulário
+
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
@@ -36,9 +32,10 @@ export class FormularioComponent implements OnInit{
   
   public onSubmit() {
     if (this.form.valid) {
-      this.name.next(this.form.controls['message'].toString());
-
-
+      this.service.setName(this.form.controls['name'].value);
+      this.service.setEmail(this.form.controls['email'].value);
+      this.service.setInterest(this.form.controls['interest'].value);
+      this.service.setMessage(this.form.controls['message'].value);
       this.mostrarMensagem = true;
     }
   }
