@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Subject } from 'rxjs';
 
 
 @Component({
@@ -12,6 +13,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FormularioComponent implements OnInit{
 
   public form!: FormGroup;
+
+  public name: Subject<string> = new Subject<string>();
+  public email: Subject<string> = new Subject<string>();
+  public interest: Subject<string> = new Subject<string>();
+  public message: Subject<string> = new Subject<string>();
+
+
+  
   mostrarMensagem: boolean = false;
 
   constructor(private formBuilder: FormBuilder) {}
@@ -27,7 +36,9 @@ export class FormularioComponent implements OnInit{
   
   public onSubmit() {
     if (this.form.valid) {
-      console.log(this.form.value);
+      this.name.next(this.form.controls['message'].toString());
+
+
       this.mostrarMensagem = true;
     }
   }
