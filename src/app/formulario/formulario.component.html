@@ -45,7 +45,7 @@
   <p style="font-size: 12px;"><span class="material-symbols-outlined">emergency</span> Obrigatório</p>
   <div class="col-12 text-center my-5">
     <ng-container *ngIf="!mostrarMensagem; else mensagemEnviada">
-      <button type="submit">Enviar</button>
+      <button type="submit" [disabled]="!form.valid">Enviar</button>
     </ng-container>
     <ng-template #mensagemEnviada>
       <p class="position-relative formEnviado">Mensagem enviada com sucesso!</p>
