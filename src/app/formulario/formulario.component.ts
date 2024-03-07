@@ -5,7 +5,6 @@ import { formulario } from '../interfaces/formulario';
 import { HttpService } from '../services/http.service';
 
 
-
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
