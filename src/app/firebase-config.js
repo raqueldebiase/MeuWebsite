@@ -11,6 +11,8 @@ const firebaseConfig = {
   messagingSenderId: "565842643351",
   appId: "1:565842643351:web:013235b21df1b7571a5cd2",
   measurementId: "G-T11DEGMCDT",
+  databaseURL:
+    "https://formulario-de-contato-21184-default-rtdb.europe-west1.firebasedatabase.app/",
 };
 
 const app = initializeApp(firebaseConfig);
