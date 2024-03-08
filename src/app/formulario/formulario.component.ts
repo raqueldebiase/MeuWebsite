@@ -36,9 +36,9 @@ export class FormularioComponent implements OnInit {
         message: this.form.controls['message'].value,
       };
 
-      this.http.insert(form).subscribe(x => {
-        console.log(x);
-      });
+      // this.http.insert(form).subscribe(x => {
+      //   console.log(x);
+      // });
 
       this.mostrarMensagem = true;
 
