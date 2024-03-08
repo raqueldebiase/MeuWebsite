@@ -1,6 +1,6 @@
 // firebase-config.js
 import { initializeApp } from "firebase/app";
-import "firebase/database";
+import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -11,10 +11,10 @@ const firebaseConfig = {
   messagingSenderId: "565842643351",
   appId: "1:565842643351:web:013235b21df1b7571a5cd2",
   measurementId: "G-T11DEGMCDT",
-  databaseURL: "https://formulario-de-contato.firebaseio.com",
 };
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const firestore = getFirestore(app);
 
-export default firebaseConfig;
+export default app; // Exporte o objeto app em vez de firebaseConfig
