@@ -11,9 +11,9 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 export class SlideComponent implements AfterViewInit {
   items =  [
-    {link1: 'https://www.google.com/', link2:'https://g1.globo.com/', imageUrl: 'assets/images/projeto1.png', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto2.png', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto3.png', altText:'profile'},
+    {link1: 'https://www.google.com/', link2:'https://g1.globo.com/', imageUrl: 'assets/images/proj01.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/proj02.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/proj3.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto4.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto5.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto6.png', altText:'profile'},
