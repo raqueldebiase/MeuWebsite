@@ -17,9 +17,9 @@ export class SlideComponent implements AfterViewInit {
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj04.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj05.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj06.png', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto7.png', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto8.png', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/projeto9.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/proj07.png', altText:'profile'},
+    {link: 'https://www.google.com/', imageUrl: 'assets/images/proj08.png', altText:'profile'},
+    
   ];
 
   isHovered: boolean[] = new Array(this.items.length).fill(false);
