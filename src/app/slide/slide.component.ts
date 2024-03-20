@@ -11,7 +11,7 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 export class SlideComponent implements AfterViewInit {
   items =  [
-    {link1: 'https://www.google.com/', link2:'https://g1.globo.com/', imageUrl: 'assets/images/proj01.png', altText:'profile'},
+    {link1: 'https://github.com/raqueldebiase/buondiforedit',link2:'https://buondiforedit360.netlify.app', imageUrl: 'assets/images/proj01.png', altText:'profile'},
     {link: 'https://github.com/raqueldebiase/buondiforedit',link2:'https://buondiforedit360.netlify.app', imageUrl: 'assets/images/proj02.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj03.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj04.png', altText:'profile'},
