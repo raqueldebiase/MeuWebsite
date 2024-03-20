@@ -12,9 +12,9 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 export class SlideComponent implements AfterViewInit {
   items =  [
     {link1: 'https://github.com/raqueldebiase/buondiforedit',link2:'https://buondiforedit360.netlify.app', imageUrl: 'assets/images/proj01.png', altText:'projeto buondi para edit'},
-    {link: 'https://github.com/raqueldebiase/Projeto-final-Edit-Ecommerce',link2:'https://projetofinaledit.netlify.app', imageUrl: 'assets/images/proj02.png', altText:'projeto final edit'},
-    {link: 'https://github.com/raqueldebiase/landscape',link2:'https://landingpageskincare.netlify.app', imageUrl: 'assets/images/proj03.png', altText:'landscape skincare'},
-    {link: 'https://github.com/raqueldebiase/landscape-II',link2:'https://landingpagethisseason.netlify.app', imageUrl: 'assets/images/proj04.png', altText:'landscape season'},
+    {link1: 'https://github.com/raqueldebiase/Projeto-final-Edit-Ecommerce',link2:'https://projetofinaledit.netlify.app', imageUrl: 'assets/images/proj02.png', altText:'projeto final edit'},
+    {link1: 'https://github.com/raqueldebiase/landscape',link2:'https://landingpageskincare.netlify.app', imageUrl: 'assets/images/proj03.png', altText:'landscape skincare'},
+    {link1: 'https://github.com/raqueldebiase/landscape-II',link2:'https://landingpagethisseason.netlify.app', imageUrl: 'assets/images/proj04.png', altText:'landscape season'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj05.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj06.png', altText:'profile'},
     {link: 'https://www.google.com/', imageUrl: 'assets/images/proj07.png', altText:'profile'},
