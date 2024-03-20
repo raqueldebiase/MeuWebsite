@@ -14,9 +14,9 @@ export class SlideComponent implements AfterViewInit {
     {link1: 'https://github.com/raqueldebiase/buondiforedit',link2:'https://buondiforedit360.netlify.app', imageUrl: 'assets/images/proj01.png', altText:'projeto buondi para edit'},
     {link1: 'https://github.com/raqueldebiase/Projeto-final-Edit-Ecommerce',link2:'https://projetofinaledit.netlify.app', imageUrl: 'assets/images/proj02.png', altText:'projeto final edit'},
     {link1: 'https://github.com/raqueldebiase/landscape',link2:'https://landingpageskincare.netlify.app', imageUrl: 'assets/images/proj03.png', altText:'landscape skincare'},
-    {link1: '',link2:'https://barralhydra.pt/', imageUrl: 'assets/images/proj04.png', altText:'barral'},
-    {link1: 'https://www.google.com/', imageUrl: 'assets/images/proj05.png', altText:'profile'},
-    {link: 'https://www.google.com/', imageUrl: 'assets/images/proj06.png', altText:'profile'},
+    {link1: 'https://github.com/raqueldebiase/barralHidra-',link2:'https://barralhydra.pt/', imageUrl: 'assets/images/proj04.png', altText:'barral'},
+    {link1: 'https://www.google.com/', link2:'https://urinal.pt/', imageUrl: 'assets/images/proj05.png', altText:'profile'},
+    {link: 'https://www.google.com/', link2:'https://casapia.pt/', imageUrl: 'assets/images/proj06.png', altText:'profile'},
     {link1: 'https://github.com/raqueldebiase/landscape-II',link2:'https://landingpagethisseason.netlify.app',imageUrl: 'assets/images/proj07.png', altText:'landscape season'},
     {link1: 'https://github.com/raqueldebiase/grid-js', link2:'https://landingpagegridcss.netlify.app', imageUrl: 'assets/images/proj09.png', altText:'profile'},
   ];
