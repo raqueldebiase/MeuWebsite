@@ -18,7 +18,7 @@
 }
 
 
-.button-container .link-proj {
+.button-container {
   border-radius: 25px;
   border: 1px solid #000000;
   padding: 8px 16px;
@@ -30,6 +30,10 @@
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+.button-container:hover {
+  background-color: #fff !important;
 }
 
 .button-container a img {
