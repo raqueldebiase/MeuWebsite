@@ -39,6 +39,10 @@
   justify-content: center;
 }
 
+.button-container::after {
+  content: url(../../assets/images/shining.svg);
+}
+
 .button-container .link-proj:hover {
   background-color: #fff !important;
 }
