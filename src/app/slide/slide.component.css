@@ -16,6 +16,10 @@
   gap: 18px;
   justify-content: start;
   width: 100%;
+
+}
+
+.button-container .button-item {
   background-color: #fff;
 }
 
