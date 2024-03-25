@@ -31,8 +31,8 @@ export class SlideComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 10,
-        spaceBetween: 10,
+        slidesPerView: 3,
+        spaceBetween: 30,
         allowTouchMove: true,
         simulateTouch: true,
         pagination: {
@@ -47,31 +47,31 @@ export class SlideComponent implements AfterViewInit {
         breakpoints: {
           320: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 10
           },
           480: {
             slidesPerView: 1,
-            spaceBetween: 300
+            spaceBetween: 20
           },
           640: {
-            slidesPerView: 3,
-            spaceBetween: 300
+            slidesPerView: 2,
+            spaceBetween: 20
           },
           900: {
             slidesPerView: 2,
-            spaceBetween: 400
+            spaceBetween: 30
           },
           1100: {
             slidesPerView: 2,
-            spaceBetween: 200
+            spaceBetween: 30
           },
           1200: {
             slidesPerView: 3,
-            spaceBetween: 500
+            spaceBetween: 30
           },
           1400: {
             slidesPerView: 3,
-            spaceBetween: 300
+            spaceBetween: 30
           }
         },
         loop: false
