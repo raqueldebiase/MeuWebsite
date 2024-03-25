@@ -124,18 +124,3 @@
   --bs-gutter-x: 0rem !important;
 }
 
-/*
---__internal__border-color: var(--web-ui_card-border-color, rgb(var(--color-swan)));
-border: solid transparent;
-border-radius: var(--web-ui_card-border-radius, 12px);
-border-width: 2px 2px 4px;
-cursor: pointer;
-display: inline-flex;
-outline: 0;
-position: relative;
-touch-action: manipulation;
-transform: translateZ(0);
--webkit-user-select: none;
--moz-user-select: none;
-user-select: none;
-*/
