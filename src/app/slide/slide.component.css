@@ -32,10 +32,6 @@
   justify-content: center;
 }
 
-.button-container .link-proj:hover{
-  background-color: #fff;
-}
-
 .button-container a img {
   width: 30px;
   height: 30px;
