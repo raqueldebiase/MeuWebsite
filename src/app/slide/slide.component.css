@@ -1,10 +1,17 @@
 .item-slide img {
- 
+  position: relative;
   width: 500px;
   height: 350px;
   border-radius: 20px;
   object-fit: cover;
   background-color: #fff;
+}
+
+.button-container::after {
+  content: url(../../assets/images/shining2.svg);
+  position: absolute;
+  top: -295px;
+  left: 450px;
 }
 
 .button-container {
@@ -39,9 +46,7 @@
   justify-content: center;
 }
 
-.button-container::after {
-  content: url(../../assets/images/shining.svg);
-}
+
 
 .button-container .link-proj:hover {
   background-color: #fff !important;
