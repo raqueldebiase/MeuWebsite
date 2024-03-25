@@ -4,7 +4,6 @@
       <div class="item-slide" (mouseenter)="setHover(i, true)" (mouseleave)="setHover(i, false)">
         <img [src]="item.imageUrl" alt="{{ item.altText }}">
         <div class="button-container" *ngIf="isHovered[i]">
-          <!-- Adicione seus botões aqui -->
           <div class="button-item">
             <a class="link-proj" href="{{ item.link1 }}" target="_blank"><img src="../../assets/images/github.svg" alt="github"></a>
           </div>
