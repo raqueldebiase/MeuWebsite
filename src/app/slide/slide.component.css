@@ -8,7 +8,7 @@
 }
 
 .button-container::after {
-  content: url(../../assets/images/shining2.svg);
+  content: url(../../assets/images/shining.svg);
   position: absolute;
   top: -295px;
   left: 450px;
