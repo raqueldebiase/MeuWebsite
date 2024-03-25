@@ -53,3 +53,18 @@
   box-shadow: 0 0 0 1px #ff8a00, 0 0 0 1px #e52e71;
   outline: 1px solid transparent;
 }
+
+@media screen and (max-width: 660px) {
+  .menu-top .menu-top-list{
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu-top .menu-top-list{
+    gap: 8px;
+  }
+  .menu-top .menu-top-list li a{
+    font-size: 14px;
+  }
+}

@@ -40,7 +40,32 @@ h2 {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 660px) {
+  .tecnologias ul li {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .tecnologias ul li {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    margin: 24px 13px 0px 0px ;
+  }
+}
+
 @media screen and (max-width: 400px) {
+  .apresentacao h1 {
+    font-size: 65px;
+    line-height: 80%;
+  }
   h2 {
     font-weight: 500;
     font-size: 2.0rem;
@@ -53,6 +78,10 @@ h2 {
   }
   .tecnologias ul li {
     margin-right: 10px;
-    padding: 14px 50px;
+    padding: 4px 18px;
   }
+  .tecnologias .tec-txt{
+    font-size: 15px;
+  } 
 }
+
