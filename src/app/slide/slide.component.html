@@ -1,7 +1,7 @@
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let item of items; let i = index">
-      <div class="item-slide" (mouseenter)="setHover(i, true)" (mouseleave)="setHover(i, false)">
+      <div class="item-slide" (mouseenter)="setHover(i, true)" (mouseleave)="setHover(i, false)" (touchstart)="setHover(i, true)" (touchend)="setHover(i, false)">
         <img [src]="item.imageUrl" alt="{{ item.altText }}">
         <div class="button-container" *ngIf="isHovered[i]">
           <div class="button-item">
