@@ -11,12 +11,6 @@
   background-color: #fff;
 }
 
-.button-container::after {
-  content: url(../../assets/images/shining.svg);
-  position: absolute;
-  top: -295px;
-  left: 450px;
-}
 
 .button-container {
   position: absolute;
@@ -69,6 +63,9 @@
     height: 250px;
     border-radius: 20px;
     object-fit: cover;
+  }
+  .button-container {
+    display: block;
   }
 }
 
