@@ -1,3 +1,13 @@
+.inicial {
+  background-image: url('../../assets/images/bgHero.png');
+  background-size: contain;
+  height: 450px;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+
 .apresentacao h1{
   font-size: 84px;
   font-family: 'Raleway', sans-serif;
@@ -23,6 +33,9 @@
   align-items: center;
 }
 
+#projects h2::after {
+  content: url(../../assets/images/shining.svg);
+}
 
 h2 {
   font-weight: 500;
