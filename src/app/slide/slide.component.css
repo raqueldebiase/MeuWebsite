@@ -64,6 +64,7 @@
 }
 
 
+
 @media screen and (max-width: 1100px) {
 
   .button-container {
@@ -100,6 +101,14 @@
   }
   .swiper-container {
     overflow-x: hidden;
+    padding-left: 75px;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+  .swiper-container {
+
     padding-left: 16px;
   }
 
