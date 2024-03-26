@@ -1,6 +1,11 @@
 
 .swiper-container {
   overflow-x: hidden;
+
+}
+
+.swiper-wrapper {
+  padding-left: 72px;
 }
 
 .item-slide img {
