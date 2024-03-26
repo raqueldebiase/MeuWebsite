@@ -57,23 +57,41 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 900px) {
+  .button-container {
+    gap: 14px;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
   .item-slide img {
     width: 380px;
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
     object-fit: cover;
   }
-  .button-container {
-    display: block;
-  }
+
 }
 
 @media screen and (max-width: 550px) {
   .item-slide img {
-    width: 280px;
-    height: 210px;
+    width: 350px;
+    height: 260px;
     border-radius: 20px;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .item-slide img {
+    width: 320px;
+    height: 225px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .button-container {
+    bottom: -15px;
+    left: 200%;
   }
 }
