@@ -79,4 +79,7 @@ li .linkedin:hover {
   .copy p {
     font-size: 8px;
   }
+  .footer-container {
+    height: 100px;
+  }
 }
