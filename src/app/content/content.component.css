@@ -1,7 +1,9 @@
 .inicial {
   background-image: url('../../assets/images/bgHero.png');
   background-size: contain;
-  height: 50vh;
+  height: 70vh;
+  position: relative;
+  z-index: 1;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -14,6 +16,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   line-height: 75%;
+  margin-top: 120px;
 }
 
 .meuNome {
