@@ -13,6 +13,10 @@
   color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
 }
 
+.about-txt span {
+  font-size: 24px;
+}
+
 .about-img {
   display: flex;
   justify-content: center;
