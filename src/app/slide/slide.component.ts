@@ -17,9 +17,9 @@ export class SlideComponent implements AfterViewInit {
     {link1: 'https://github.com/raqueldebiase/barralHidra-',link2:'https://barralhydra.pt/', imageUrl: 'assets/images/proj04.png', altText:'barral'},
     {link1: 'https://github.com/raqueldebiase/infecao-urinaria', link2:'https://urinal.pt/', imageUrl: 'assets/images/proj05.png', altText:'infecoes urinarias'},
     {link1: 'https://github.com/raqueldebiase/casapiadelisboa', link2:'https://casapia.pt/', imageUrl: 'assets/images/proj06.png', altText:'casa pia de lisboa'},
-    {link1: 'https://github.com/raqueldebiase/grid-js', link2:'https://landingpagegridcss.netlify.app', imageUrl: 'assets/images/proj09.png', altText:'profile'},
     {link1: 'https://github.com/raqueldebiase/cultura-unl', link2:'https://novacultura.unl.pt/', imageUrl: 'assets/images/proj11.png', altText:'nova cultura'},
     {link1: 'https://github.com/raqueldebiase/superbockgroup', link2:'https://superbockgroup.com/', imageUrl: 'assets/images/proj10.png', altText:'super bock group'},
+    {link1: 'https://github.com/raqueldebiase/grid-js', link2:'https://landingpagegridcss.netlify.app', imageUrl: 'assets/images/proj09.png', altText:'profile'},
   ];
 
   isHovered: boolean[] = new Array(this.items.length).fill(false);
@@ -31,7 +31,7 @@ export class SlideComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 10,
+        slidesPerView: 'auto',
         spaceBetween: 10,
         allowTouchMove: true,
         simulateTouch: true,
