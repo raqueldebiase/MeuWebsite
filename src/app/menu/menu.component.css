@@ -6,7 +6,7 @@
   position: absolute;
   z-index: 99999;
   background-color: #FFF;
-  padding: 8px 30px;
+  padding: 4px 30px;
   border-radius:50px;
   top: 5%;
   left: 50%;
@@ -68,11 +68,26 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+  .menu-top {
+    padding: 4px 6px;
+  }
   .menu-top .menu-top-list{
-    gap: 8px;
+    gap: 15px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .menu-top {
+    padding: 4px 15px;
+  }
+  .menu-top .menu-top-list{
+    gap: 18px;
   }
   .menu-top .menu-top-list li a{
     font-size: 14px;
   }
+
 }
+
