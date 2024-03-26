@@ -76,8 +76,8 @@ h2 {
     font-weight: 500;
     font-size: 2.0rem;
   }
-  .about p {
-    font-size: 16px;
+  .about .about-txt p{
+    font-size: 1.0em;
   }
   .about-img img {
     width: 100%;
@@ -89,5 +89,10 @@ h2 {
   .tecnologias .tec-txt{
     font-size: 15px;
   } 
+
+  .tec-txt p{
+    font-size: 1.1em;
+    margin: 8px 0px;
+  }
 }
 
