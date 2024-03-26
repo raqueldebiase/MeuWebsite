@@ -59,7 +59,7 @@ export class SlideComponent implements AfterViewInit {
           },
           480: {
             slidesPerView: 2,
-            spaceBetween: 100
+            spaceBetween: 300
           },
           570: {
             slidesPerView: 2,
@@ -83,14 +83,18 @@ export class SlideComponent implements AfterViewInit {
           },
           1100: {
             slidesPerView: 2,
-            spaceBetween: 150
+            spaceBetween: 100
           },
           1200: {
             slidesPerView: 3,
             spaceBetween: 450
           },
-          1400: {
+          1700: {
             slidesPerView: 3,
+            spaceBetween: 100
+          },
+          1800: {
+            slidesPerView: 4,
             spaceBetween: 300
           }
         },

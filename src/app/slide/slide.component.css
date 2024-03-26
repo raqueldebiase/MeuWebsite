@@ -1,5 +1,7 @@
+
 .swiper-container {
   overflow-x: hidden;
+  width: 140%;
 }
 
 .item-slide img {
@@ -55,6 +57,27 @@
   height: 30px;
   object-fit: contain;
   background-color: #fff;
+}
+
+@media screen and (max-width: 1800px) {
+  .swiper-container {
+    overflow-x: hidden;
+    width: 115%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .swiper-container {
+    overflow-x: hidden;
+    width: 113%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .swiper-container {
+    overflow-x: hidden;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
