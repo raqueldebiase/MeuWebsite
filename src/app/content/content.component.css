@@ -20,12 +20,14 @@
 }
 
 .meuNome {
+  font-size: 20px;
   font-weight: 600;
-  background: linear-gradient(to right, #ff8a00, #e52e71);
+  background: linear-gradient(to right, #ff7f00, #b12d5b); /* Ajustei as cores do gradiente */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
 }
+
 
 .about-txt span {
   font-size: 24px;
