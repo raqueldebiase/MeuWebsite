@@ -2,7 +2,7 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let item of items; let i = index" (mouseenter)="setHover(i, true)" (mouseleave)="setHover(i, false)">
       <div class="item-slide" [ngClass]="{'hovered': isHovered[i]}">
-        <img [src]="item.imageUrl" alt="{{ item.altText }}">
+        <img class="img-projetos" [src]="item.imageUrl" alt="{{ item.altText }}">
         <div class="button-container">
           <div class="button-item">
             <a class="link-proj" href="{{ item.link1 }}" target="_blank"><img src="../../assets/images/github.svg" alt="github"></a>

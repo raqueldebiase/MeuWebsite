@@ -1,6 +1,6 @@
 .footer-container {
-  background: #E8E8E8;
-  height: 150px;
+  background-image: linear-gradient(to top, rgba(216, 189, 207, 0.33), transparent);
+  height: 10vh;
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -41,7 +41,7 @@
 }
 
 .github {
-  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
+  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
   width: 32px;
   height: 32px;
   display: flex;
@@ -59,25 +59,16 @@
 
 
 .linkedin:hover {
-  background: linear-gradient(to left, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
+  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
   width: 24px;
   height: 24px;
   display: flex;
   border-radius: 5px;
 }
 
-.copy{
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, rgba(255, 138, 0, 0.5), rgba(229, 46, 113, 0.5));
-  
-}
 .copy p {
   font-size: 12px;
-  height: 100%;
-  color: #fff;
+  color: rgb(0 0 0 / 61%);
   font-weight: bold;
 }
 

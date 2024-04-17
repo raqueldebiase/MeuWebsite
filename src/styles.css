@@ -10,6 +10,13 @@
   src: url('./assets/Raleway/static/Raleway-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Bricolage_Grotesque';
+  src: url('./assets/Bricolage_Grotesque,Raleway/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
+}
+
+
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

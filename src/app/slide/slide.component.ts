@@ -35,6 +35,7 @@ export class SlideComponent implements AfterViewInit {
         spaceBetween: 10,
         allowTouchMove: true,
         simulateTouch: true,
+        loop: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
@@ -114,7 +115,7 @@ export class SlideComponent implements AfterViewInit {
             spaceBetween: 300
           }
         },
-        loop: false
+        
       });
     }, 0);
   }

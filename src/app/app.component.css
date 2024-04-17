@@ -1,4 +1,10 @@
 
+main {
+  background: linear-gradient(to bottom, #F0E2DD, #FFFFFF);
+
+}
+
+
 @media  screen and (max-width: 400px) {
   content {
     padding: 18px;
