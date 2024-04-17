@@ -19,7 +19,7 @@
 
 .item-slide.hovered .img-projetos {
   filter: brightness(0.9); 
-  transform: scale(0.8); /* Aumenta a escala em 10% */
+  transform: scale(0.9); /* Aumenta a escala em 10% */
 
   overflow: hidden;
 }
