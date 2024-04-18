@@ -18,15 +18,3 @@ main {
 }
 
 
-@media  screen and (max-width: 767px) {
-  main {
-    background-image: url('../assets/images/bg-main-2.svg');
-    background-size: cover;
-    background-attachment: fixed;
-    /* height: 150vh; */
-    position: relative;
-    background-repeat: no-repeat;
-    
-  }
-  
-}
