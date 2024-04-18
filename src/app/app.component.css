@@ -18,9 +18,12 @@ main {
 }
 
 
-@media  screen and (max-width: 400px) {
+@media  screen and (max-width: 767px) {
   content {
     padding: 18px;
+  }
+  main {
+    background-image: url('../assets/images/bg-main-pg.svg');
   }
   
 }
