@@ -24,6 +24,11 @@ main {
   }
   main {
     background-image: url('../assets/images/bg-main-pg.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 150vh; */
+    position: relative;
+    background-repeat: no-repeat;
     
   }
   
