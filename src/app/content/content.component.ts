@@ -11,7 +11,7 @@ export class ContentComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any) {
-    this.parallaxOffset = window.pageYOffset * 0.7; // Ajuste o valor (0.7) para a velocidade desejada do parallax
+    this.parallaxOffset = window.pageYOffset * 0.4; // Ajuste o valor (0.7) para a velocidade desejada do parallax
     this.parallax2Offset = window.pageYOffset * 0.1; // Ajuste o valor (0.5) para a velocidade desejada do segundo parallax
   }
 }

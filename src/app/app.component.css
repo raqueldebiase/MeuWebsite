@@ -1,7 +1,13 @@
 
 main {
   background: linear-gradient(to bottom, #F0E2DD, #FFFFFF);
-
+  background-image: url('../assets/images/bg-main.png');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center bottom ;
 }
 
 
