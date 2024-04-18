@@ -1,37 +1,24 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-
-export class AppComponent implements OnInit{
-  title = 'portfolio';
-  name = '';
-  email = '';
-  interest = '';
-  message= '';
-
-  constructor(){}
-
-  ngOnInit(): void {}
-
+export class AppComponent {
   parallaxOffset: number = 0;
   parallax2Offset: number = 0;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any) {
-    // Verifica se o dispositivo é um dispositivo móvel
-    const isMobile = window.innerWidth <= 768; // Você pode ajustar este valor conforme necessário
+    const isMobile = window.innerWidth <= 767; // Defina o limite de largura para dispositivos móveis conforme necessário
 
-    // Ajusta os valores de parallax de acordo com o tipo de dispositivo
     if (isMobile) {
-      this.parallaxOffset = window.pageYOffset * 0.6; // Ajuste o valor para uma velocidade mais lenta no parallax
-      this.parallax2Offset = window.pageYOffset * 0.2; // Ajuste o valor para uma velocidade mais lenta no segundo parallax
+      this.parallaxOffset = window.pageYOffset * 0.6; // Ajuste o valor para dispositivos móveis
+      this.parallax2Offset = window.pageYOffset * 0.1; // Ajuste o valor para dispositivos móveis
     } else {
-      this.parallaxOffset = window.pageYOffset * 0.4; // Valor original para dispositivos desktop
-      this.parallax2Offset = window.pageYOffset * 0.1; // Valor original para dispositivos desktop
+      this.parallaxOffset = window.pageYOffset * 0.6; // Valor original para desktop
+      this.parallax2Offset = window.pageYOffset * 0.1; // Valor original para desktop
     }
   }
 }
