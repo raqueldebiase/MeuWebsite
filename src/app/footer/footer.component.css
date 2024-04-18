@@ -1,5 +1,5 @@
 .footer-container {
-  background-image: linear-gradient(to top, rgba(216, 189, 207, 0.33), transparent);
+  background-image: url('../../assets/images/bg-escuro-papel.png');
   height: 100%;
   width: 100%;
   padding: 0px;
@@ -7,68 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
-}
-
-.social-medias ul{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  
-}
-
-.social-medias ul li{
-  width: 48px;
-  height: 48px;
-  padding: 8px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-medias ul li a{
-  text-decoration: none;
-}
-
-.social-medias ul li a img{
-  width: 24px;
-  height: 24px;
-  margin: auto;
-  
-}
-
-.github {
-  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
-  width: 32px;
-  height: 32px;
-  display: flex;
-  border-radius: 5px;
-}
-
-.github:hover{
-  background: transparent;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  outline: 2px solid transparent;
- 
-}
-
-
-.linkedin:hover {
-  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
-  width: 24px;
-  height: 24px;
-  display: flex;
-  border-radius: 5px;
+  color: #fff;
 }
 
 .copy p {
   font-size: 12px;
-  color: rgb(0 0 0 / 61%);
+  color: #fff;
   font-weight: bold;
 }
 

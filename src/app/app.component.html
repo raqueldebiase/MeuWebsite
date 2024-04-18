@@ -1,8 +1,8 @@
-<main class="container-fluid main " [ngStyle]="{ 'background-position-y': parallax2Offset + 'px' }">
+<main class="container-fluid main" [ngStyle]="{ 'background-position': 'center ' + (parallaxOffset + 400) + 'px' }">
   <section class="row header">
     <app-menu></app-menu>
   </section>
-  <section class="row mt-md-0 mx-0 mx-md-0 content">
+  <section class="row mt-md-0 mx-0 mx-md-0 content" [ngStyle]="{ 'background-position': 'center ' + (parallax2Offset + 100) + 'px' }">
     <app-content></app-content>
   </section>
   <section class="row footer">

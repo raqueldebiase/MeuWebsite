@@ -8,8 +8,8 @@
   z-index: 2;
 }
 .apresentacao h1 {
-  font: 84px/75% "Bricolage Grotesque", sans-serif;
-  font-weight: 200;
+  font: 4rem;
+  font-weight: 300;
 }
 .meuNome {
   letter-spacing: -1px;
@@ -30,17 +30,6 @@
 .about-img img {
   max-width: 100%;
 }
-
-.bg-projetos {
-  background-image: url('../../assets/images/bg-tec.svg');
-  background-size: cover;
-  background-attachment: fixed;
-  height: 150vh;
-  position: relative;
-  
-}
-
-
 #projects {
   position: relative;
 }
@@ -54,11 +43,6 @@
 h2 {
   font-weight: 500;
   font-size: 2.5rem;
-}
-.tecnologias {
-  position: relative;
-  z-index: 9;
-  height: 100%;
 }
 .tec-lista ul {
   display: flex;
@@ -81,17 +65,6 @@ h2 {
   padding: 3rem !important;
   text-align: center;
 }
-
-#contacts {
-  background-image: url('../../assets/images/Union.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 118vh;
-  position: relative;
-  overflow: hidden;
-}
-
 .formulario {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1.5625rem;
@@ -165,24 +138,11 @@ h2 {
 }
 
 
-@media screen and (max-width: 1200px){
-  #contacts {
-    margin-top: 64px;
-  }
-}
-
 @media screen and (max-width: 992px){
-  #contacts {
-    
-  }
-  .bg-projetos {
-    height: 164vh;
-  }
   .redes-sociais, .outros-contatos {
     max-width: 100%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .about-img {
     justify-content: center;
@@ -211,13 +171,6 @@ h2 {
     justify-content: center;
     align-items: center;
   }
-
-  #contacts {
-    height: 160vh;
-    margin-top: 140px;
-  }
-
-
 }
 
 @media screen and (max-width: 660px) {
@@ -240,13 +193,15 @@ h2 {
   .info-contactos{
     padding: 0px 12px !important;
   }
-
-  #contacts {
-    margin-top: 90px;
-  }
 }
 
 @media screen and (max-width: 580px) {
+  .about-txt p {
+    font-size: 1rem;
+  }
+  .meuNome {
+    font-size: 1.2rem;
+  }
   .tecnologias ul li {
     margin: 0px !important;
     padding: 8px 18px;
@@ -263,24 +218,18 @@ h2 {
     font-size: 1.1em;
     margin: 8px 0px;
   }
-  .bg-projetos{
-    height: 142vh;
-  }
-  #contacts {
-    margin-top: 0px;
-  }
+
+
 }
 
 @media screen and (max-width: 484px) {
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   #contacts {
     margin-top: 48px;
   }
-  .bg-projetos{
-    height: 145vh;
-  }
+
   .tecnologias ul li {
     margin: 0px !important;
     padding: 8px 12px;
