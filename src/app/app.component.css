@@ -1,13 +1,11 @@
 
 main {
-  background-image: url('../assets/images/bg-main.png');
+  background-image: url('../assets/images/bg-main.svg');
   background-size: cover;
   background-attachment: fixed;
   /* height: 150vh; */
   position: relative;
   background-repeat: no-repeat;
-
-
 }
 
 .content {
