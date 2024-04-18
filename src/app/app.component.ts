@@ -27,8 +27,8 @@ export class AppComponent implements OnInit{
 
     // Ajusta os valores de parallax de acordo com o tipo de dispositivo
     if (isMobile) {
-      this.parallaxOffset = window.pageYOffset * 0.3; // Ajuste o valor para uma velocidade mais lenta no parallax
-      this.parallax2Offset = window.pageYOffset * 0.05; // Ajuste o valor para uma velocidade mais lenta no segundo parallax
+      this.parallaxOffset = window.pageYOffset * 0.9; // Ajuste o valor para uma velocidade mais lenta no parallax
+      this.parallax2Offset = window.pageYOffset * 0.5; // Ajuste o valor para uma velocidade mais lenta no segundo parallax
     } else {
       this.parallaxOffset = window.pageYOffset * 0.6; // Valor original para dispositivos desktop
       this.parallax2Offset = window.pageYOffset * 0.1; // Valor original para dispositivos desktop
