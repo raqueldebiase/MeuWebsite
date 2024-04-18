@@ -40,7 +40,8 @@ form button {
 }
 
 form button:hover {
-  background-color: #fff;
+  background: #fff;
+  box-shadow: 2px 2px #444;
 }
 
 .coluna1 input{
