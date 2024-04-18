@@ -2,7 +2,6 @@
   height: 24vh;
   display: flex;
   align-items: end;
-  
 }
 
 #about {
@@ -10,24 +9,22 @@
   z-index: 2;
 }
 
-.apresentacao h1{
-  font-size: 84px;
-  font-family: "Bricolage Grotesque", sans-serif;
+.apresentacao h1 {
+  font: 84px/75% "Bricolage Grotesque", sans-serif;
   font-weight: 200;
-  line-height: 75%;
 }
 
 .meuNome {
-  font-size: 16px;
+  font: 16px/normal sans-serif;
   letter-spacing: -1px;
   font-weight: 600;
-  background: rgba(169, 54, 36, 0.66); /* Ajustei as cores do gradiente */
+  background: linear-gradient(rgba(169, 54, 36, 0.66), transparent);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
+  color: transparent;
 }
 
-.about-txt{
+.about-txt {
   font-size: 1em;
 }
 
@@ -48,7 +45,6 @@
 .bg-projetos {
   background-image: url('../../assets/images/bg-tec.svg');
   height: 140vh;
-  padding-top: -100px;
 }
 
 #projects {
@@ -62,32 +58,6 @@
   bottom: 50px;
   left: 145px;
 }
-
-/* .bg-projetos {
-  background-image: linear-gradient(to bottom, rgba(216, 189, 207, 0.33), transparent);
-  position: relative;
-  margin-top: 50px;
-  width: 100%;
-  height: 140vh;
-} */
-
-
-/* .bg-projetos::before {
-  content: '';
-  position: absolute;
-  top: -224px; 
-  left: 0;
-  width: 100%; 
-  height: 27vh; 
-  background-image: url('../../assets/images/wave-1.svg');
-  background-size: contain; 
-  background-repeat: no-repeat;
-} */
-
-
-/* #projects h2::after {
-  content: url(../../assets/images/shining.svg);
-} */
 
 h2 {
   font-weight: 500;
@@ -104,8 +74,7 @@ h2 {
   border: 1px solid #000;
   padding: 14px 60px;
   border-radius: 50px;
-  margin-top: 30px;
-  margin-right: 30px;
+  margin: 30px 30px 0;
   box-shadow: 2px 2px #444444;
   background-color: #fff;
 }
@@ -113,12 +82,12 @@ h2 {
 .tec-txt {
   border-radius: 1.5625rem;
   border: 1px solid #000;
-  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 82.93%);  
+  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33), rgba(247, 187, 136, 0.54));
   padding: 3rem !important;
   text-align: center;
 }
 
-#contacts{
+#contacts {
   background-image: url('../../assets/images/Union.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,71 +103,30 @@ h2 {
   padding: 36px;
 }
 
-.formulario::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(15px);
-   /* Cor de fundo com transparência */
-  z-index: -3;/* Herda a borda do elemento pai */
-}
-
-.outros-contatos {
-  background-image: url('../../assets/images/bg-escuro.png');
-  backdrop-filter: blur(50px);
+.outros-contatos, .redes-sociais {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
   border-radius: 1.5625rem;
   padding: 2rem !important;
-  color: #fff;
   max-width: 65%;
 }
 
-.outros-contatos .menu-contatos nav ul li{
+.menu-contatos nav ul li {
   list-style: none;
 }
 
-.outros-contatos .menu-contatos nav ul li a{
+.menu-contatos nav ul li a {
   text-decoration: none;
 }
 
-.outros-contatos .menu-contatos nav ul li a:hover{
-  color: #000;
-}
-
-.redes-sociais {
-  position: relative; /* Necessário para o pseudo-elemento */
-  padding: 2rem !important;
-  border: 2px rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 1.5625rem;
-  z-index: 99999;
-  max-width: 65%;
-}
-
-.redes-sociais::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(2px);
-   /* Cor de fundo com transparência */
-  border-radius: inherit; 
-  z-index: -3;/* Herda a borda do elemento pai */
-}
-
-.social-medias ul{
+.social-medias ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 16px;
-  
 }
 
-.social-medias ul li{
+.social-medias ul li {
   width: 48px;
   height: 48px;
   padding: 8px;
@@ -209,102 +137,33 @@ h2 {
   align-items: center;
 }
 
-.social-medias ul li a{
+.social-medias ul li a {
   text-decoration: none;
 }
 
-.social-medias ul li a img{
+.social-medias ul li a img {
   width: 24px;
   height: 24px;
   margin: auto;
-  
 }
 
-.github {
-  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
+.github, .linkedin, .discord {
+  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33), rgba(247, 187, 136, 0.54));
   width: 32px;
   height: 32px;
   display: flex;
   border-radius: 5px;
 }
 
-.github:hover{
+.github:hover, .linkedin:hover, .discord:hover {
   background: transparent;
   width: 24px;
   height: 24px;
   display: flex;
   outline: 2px solid transparent;
- 
-}
-
-
-.linkedin:hover {
-  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
-  width: 24px;
-  height: 24px;
-  display: flex;
-  border-radius: 5px;
-}
-
-.discord img{
-  width: 30px !important;
-  height: 30px !important;
-}
-
-.discord:hover {
-  background: linear-gradient(180deg, rgba(169, 54, 36, 0.33) 0%, rgba(247, 187, 136, 0.54) 75.93%);
-  width: 24px;
-  height: 24px;
-  display: flex;
-  border-radius: 5px;
-}
-
-
-
-
-@media screen and (max-width: 2250px) {
-  .bg-projetos::before {
-    height: 100%;
-    top: -328px;
-  }
-  #contacts::before {
-    height: 100%;
-  }
-  #contacts::after{
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  #contacts {
-    margin-top: -20px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  h2 {
-    font-weight: 500;
-    font-size: 1.9rem;
-  }
-}
-
-@media screen and (max-width: 999px) {
-  .about-img img {
-    max-width: 85%;
-  }
-  .bg-projetos {
-    height: 160vh;
-  }
-
-
-  .redes-sociais,
-  .outros-contatos {
-    max-width: 64%;
-  }
 }
 
 @media screen and (max-width: 767px) {
-
   .about-img {
     justify-content: center;
   }
@@ -326,34 +185,30 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   #contacts {
     height: 160vh;
     margin-top: 90px;
   }
-  .redes-sociais,
-  .outros-contatos {
+
+  .redes-sociais, .outros-contatos {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 660px) {
-
   .apresentacao h1 {
     font-size: 65px;
     line-height: 80%;
     font-weight: 300;
   }
-  .container {
-    --bs-gutter-x: 1.5rem !important;
-  }
+
   .formulario {
     margin: 0rem 0.8rem;
   }
-  .redes-sociais h3,
-  .outros-contatos h3 {
+
+  .redes-sociais h3, .outros-contatos h3 {
     font-size: 1.3rem;
   }
 
@@ -369,39 +224,43 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
-    margin: 24px 13px 0px 0px ;
+    margin: 24px 13px 0px 0px;
   }
-  #contacts{
+
+  #contacts {
     margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .apresentacao h1{
-    
+  .apresentacao h1 {
     margin-top: 150px;
   }
+
   h2 {
     font-weight: 500;
     font-size: 1.5rem;
   }
-  .about .about-txt p{
+
+  .about .about-txt p {
     font-size: 1.0em;
   }
+
   .about-img img {
     width: 100%;
   }
+
   .tecnologias ul li {
     margin-right: 10px;
     padding: 4px 18px;
   }
-  .tecnologias .tec-txt{
-    font-size: 15px;
-  } 
 
-  .tec-txt p{
+  .tecnologias .tec-txt {
+    font-size: 15px;
+  }
+
+  .tec-txt p {
     font-size: 1.1em;
     margin: 8px 0px;
   }
 }
-
