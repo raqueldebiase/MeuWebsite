@@ -12,9 +12,10 @@ main {
 
 .content {
   background-image: url('../assets/images/bg-tec.svg');
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   position: relative;
+  background-repeat: no-repeat;
 
 }
 
