@@ -30,6 +30,7 @@
   }
 
   body {
+    background: linear-gradient(to bottom, #F0E2DD, #FFFFFF);
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;

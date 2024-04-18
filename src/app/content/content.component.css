@@ -30,10 +30,17 @@
 .about-img img {
   max-width: 100%;
 }
+
 .bg-projetos {
   background-image: url('../../assets/images/bg-tec.svg');
-  height: 140vh;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150vh;
+  position: relative;
+  
 }
+
+
 #projects {
   position: relative;
 }
@@ -41,7 +48,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  bottom: 50px;
+  bottom: 0px;
   left: 145px;
 }
 h2 {
@@ -79,10 +86,10 @@ h2 {
   background-image: url('../../assets/images/Union.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  height: 118vh;
   position: relative;
-  z-index: 0;
-  height: 115vh;
-  margin-top: -130px;
+  overflow: hidden;
 }
 
 .formulario {
@@ -157,11 +164,7 @@ h2 {
   outline: 2px solid transparent;
 }
 
-@media screen and (max-width: 1500px){
-  #contacts {
-    margin-top: -80px;
-  }
-}
+
 @media screen and (max-width: 1200px){
   #contacts {
     margin-top: 64px;

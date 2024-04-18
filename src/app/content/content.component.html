@@ -29,11 +29,17 @@
   </div>
 </div>
 
+<div class="container-fluid teste">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"></div>
+    </div>
+  </div>
+</div>
 
-
-<div class="container-fluid bg-projetos my-5">
+<div class="container-fluid bg-projetos mt-5" [ngStyle]="{ 'background-position-y': parallaxOffset + 'px' }">
   <div class="container" id="projects">
-    <div class="row pb-3 pb-md-5">
+    <div class="row pt-md-3 pb-md-0 ">
       <div class="col-12">
         <h2 class="titulo-projetos">Projetos</h2>
         <iframe src="https://lottie.host/embed/f6d07745-a735-451c-b8a0-042201af7e9c/iOtePhZkgD.json"></iframe>
@@ -53,7 +59,7 @@
         <h2 class="text-center mb-4">tecnologias + metodologias</h2>
         <p>No meu dia-a-dia, utilizo uma variedade de <b>tecnologias</b> que me permitem criar experiências digitais funcionais que, em conjunto, me permitem criar soluções completas, desde a estruturação e estilização até a interatividade e manipulação de dados. Estou constantemente atualizando e explorando <b>novas ferramentas </b>para garantir que meus projetos estejam alinhados com as melhores práticas. </p>
       </div>
-      <div class="col-12 py-5 pt-md-5 tec-lista">
+      <div class="col-12 pt-5 pt-md-5 tec-lista">
         <ul>
           <li>html</li>
           <li>css</li>
@@ -69,13 +75,11 @@
           <li>typescript</li>
         </ul>
       </div>
-
     </div>
   </div>
-
 </div>
 
-<div class="container-fluid d-flex flex-wrap justify-content-center align-items-center" id="contacts">
+<div class="container-fluid d-flex flex-wrap justify-content-center align-items-center" id="contacts" [ngStyle]="{ 'background-position-y': parallax2Offset + 'px' }">
   <div class="container formulario">
     <div class="row">
       <div class="col-12 ">
