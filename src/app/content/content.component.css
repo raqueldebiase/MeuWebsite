@@ -199,6 +199,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    gap: 4px;
   }
   .tecnologias ul li {
     width: 200px;
@@ -241,25 +242,45 @@ h2 {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .tecnologias ul li {
+    margin: 0px !important;
+    padding: 8px 18px;
+  }
+  .tec-lista ul {
+    gap: 24px;
+  }
+
+  .tecnologias .tec-txt {
+    font-size: 15px;
+  }
+
+  .tec-txt p {
+    font-size: 1.1em;
+    margin: 8px 0px;
+  }
+  .bg-projetos{
+    height: 142vh;
+  }
+  #contacts {
+    margin-top: 0px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   h2 {
     font-size: 1.9rem;
   }
-  .tecnologias ul li {
-    width: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px;
-    margin: 24px 13px 0px 0px;
-  }
-
   #contacts {
     margin-top: 48px;
   }
-
   .bg-projetos{
-    height: 166vh;
+    height: 145vh;
+  }
+  .tecnologias ul li {
+    margin: 0px !important;
+    padding: 8px 12px;
+    width: 140px;
   }
 }
 
@@ -281,17 +302,5 @@ h2 {
     font-size: 1.0em;
   }
 
-  .tecnologias ul li {
-    margin-right: 10px;
-    padding: 4px 18px;
-  }
 
-  .tecnologias .tec-txt {
-    font-size: 15px;
-  }
-
-  .tec-txt p {
-    font-size: 1.1em;
-    margin: 8px 0px;
-  }
 }
