@@ -3,54 +3,40 @@
   display: flex;
   align-items: end;
 }
-
 #about {
   position: relative;
   z-index: 2;
 }
-
 .apresentacao h1 {
   font: 84px/75% "Bricolage Grotesque", sans-serif;
   font-weight: 200;
 }
-
 .meuNome {
-  font: 16px/normal sans-serif;
   letter-spacing: -1px;
-  font-weight: 600;
-  background: linear-gradient(rgba(169, 54, 36, 0.66), transparent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-weight: 400;
+  color: rgba(169, 54, 36, 0.99);
 }
-
 .about-txt {
   font-size: 1em;
 }
-
 .about-txt span {
   font-size: 24px;
 }
-
 .about-img {
   display: flex;
   justify-content: end;
   align-items: center;
 }
-
 .about-img img {
   max-width: 100%;
 }
-
 .bg-projetos {
   background-image: url('../../assets/images/bg-tec.svg');
   height: 140vh;
 }
-
 #projects {
   position: relative;
 }
-
 #projects iframe {
   position: absolute;
   width: 100px;
@@ -58,17 +44,19 @@
   bottom: 50px;
   left: 145px;
 }
-
 h2 {
   font-weight: 500;
   font-size: 2.5rem;
 }
-
 .tecnologias {
   position: relative;
   z-index: 9;
 }
-
+.tec-lista ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 .tecnologias ul li {
   list-style: none;
   border: 1px solid #000;
@@ -78,7 +66,6 @@ h2 {
   box-shadow: 2px 2px #444444;
   background-color: #fff;
 }
-
 .tec-txt {
   border-radius: 1.5625rem;
   border: 1px solid #000;
@@ -113,6 +100,12 @@ h2 {
 
 .menu-contatos nav ul li {
   list-style: none;
+  font-weight: 400;
+  color: rgba(169, 54, 36, 0.99);
+}
+
+.menu-contatos nav ul li:hover{
+ color: #000;
 }
 
 .menu-contatos nav ul li a {
@@ -163,6 +156,29 @@ h2 {
   outline: 2px solid transparent;
 }
 
+@media screen and (max-width: 1500px){
+  #contacts {
+    margin-top: -80px;
+  }
+}
+@media screen and (max-width: 1200px){
+  #contacts {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  #contacts {
+    
+  }
+  .bg-projetos {
+    height: 164vh;
+  }
+  .redes-sociais, .outros-contatos {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .about-img {
     justify-content: center;
@@ -179,7 +195,11 @@ h2 {
     bottom: 25px;
     left: 110px;
   }
-
+  .tec-lista ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
   .tecnologias ul li {
     width: 200px;
     display: flex;
@@ -189,12 +209,10 @@ h2 {
 
   #contacts {
     height: 160vh;
-    margin-top: 90px;
+    margin-top: 140px;
   }
 
-  .redes-sociais, .outros-contatos {
-    max-width: 100%;
-  }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -203,7 +221,6 @@ h2 {
     line-height: 80%;
     font-weight: 300;
   }
-
   .formulario {
     margin: 0rem 0.8rem;
   }
@@ -215,9 +232,19 @@ h2 {
   .outros-contatos .menu-contatos nav ul li {
     margin-bottom: 0.3rem;
   }
+  .info-contactos{
+    padding: 0px 12px !important;
+  }
+
+  #contacts {
+    margin-top: 90px;
+  }
 }
 
 @media screen and (max-width: 484px) {
+  h2 {
+    font-size: 1.9rem;
+  }
   .tecnologias ul li {
     width: 140px;
     display: flex;
@@ -228,7 +255,11 @@ h2 {
   }
 
   #contacts {
-    margin-top: 0px;
+    margin-top: 48px;
+  }
+
+  .bg-projetos{
+    height: 145vh;
   }
 }
 
@@ -242,12 +273,12 @@ h2 {
     font-size: 1.5rem;
   }
 
-  .about .about-txt p {
-    font-size: 1.0em;
+  .about-img img {
+    width: 75% !important;
   }
 
-  .about-img img {
-    width: 100%;
+  .about .about-txt p {
+    font-size: 1.0em;
   }
 
   .tecnologias ul li {
