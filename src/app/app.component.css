@@ -1,6 +1,6 @@
 
 main {
-  background-image: url('../assets/images/bg-main.svg');
+  background-image: url('../assets/images/bg-main-2.svg');
   background-size: cover;
   background-attachment: fixed;
   /* height: 150vh; */
@@ -19,11 +19,8 @@ main {
 
 
 @media  screen and (max-width: 767px) {
-  content {
-    padding: 18px;
-  }
   main {
-    background-image: url('../assets/images/bg-main-pg.svg');
+    background-image: url('../assets/images/bg-main-2.svg');
     background-size: cover;
     background-attachment: fixed;
     /* height: 150vh; */
