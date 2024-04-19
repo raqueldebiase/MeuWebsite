@@ -59,6 +59,13 @@ form button:hover {
   top: -25px;
 }
 
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: #fff !important;
+  color: fieldtext !important;
+}
+
 @media screen and (max-width: 767px) {
   .coluna1 input{
     margin-right: 0px;
