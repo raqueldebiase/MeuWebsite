@@ -3,52 +3,52 @@
     <div class="row">
       <div class="col-12 col-md-6 coluna1">
         <div class="d-grid ">
-          <label class="my-3">Seu nome <span class="material-symbols-outlined">
+          <label class="my-3">Your name <span class="material-symbols-outlined">
               emergency
             </span></label>
           <input formControlName="name" type="text" id="nome" name="nome" placeholder="Insira aqui o seu nome" required>
           <div *ngIf="form.controls['name'].hasError('required') && form.controls['name'].touched">
-            O campo é obrigatório.
+            This field is required.
           </div>
         </div>
         <div class="d-grid ">
-          <label class="my-3">Seu e-mail <span class="material-symbols-outlined">
+          <label class="my-3">Your e-mail <span class="material-symbols-outlined">
               emergency
             </span></label>
           <input formControlName="email" type="email" id="email" name="email" placeholder="Insira aqui o seu e-mail" required>
           <div *ngIf="form.controls['email'].hasError('required') && form.controls['email'].touched">
-            O campo é obrigatório.
+            This field is required.
           </div>
         </div>
         <div class="d-grid ">
-          <label class="my-3">O que te interessou? <span class="material-symbols-outlined">
+          <label class="my-3">What interested you? <span class="material-symbols-outlined">
               emergency
             </span></label>
           <input formControlName="interest" type="text" id="interested" name="interested" placeholder="Insira aqui o motivo do seu contato" required>
           <div *ngIf="form.controls['interest'].hasError('required') && form.controls['interest'].touched">
-            O campo é obrigatório.
+            This field is required.
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 d-grid coluna2">
-        <label class="message my-3">Mensagem <span class="material-symbols-outlined">
+        <label class="message my-3">Message <span class="material-symbols-outlined">
             emergency
           </span></label>
         <textarea formControlName="message" id="mensagem" name="mensagem" rows="4" placeholder="Deixe aqui a sua mensagem" required></textarea>
         <div *ngIf="form.controls['message'].hasError('required') && form.controls['message'].touched">
-          O campo é obrigatório.
+          This field is required.
         </div>
 
       </div>
     </div>
   </div>
-  <p style="font-size: 12px;"><span class="material-symbols-outlined">emergency</span> Obrigatório</p>
+  <p style="font-size: 12px;"><span class="material-symbols-outlined">emergency</span> Required</p>
   <div class="col-12 text-center mt-5">
     <ng-container *ngIf="!mostrarMensagem; else mensagemEnviada">
-      <button type="submit" [disabled]="!form.valid">Enviar</button>
+      <button type="submit" [disabled]="!form.valid">Send</button>
     </ng-container>
     <ng-template #mensagemEnviada>
-      <p class="position-relative formEnviado">Mensagem enviada com sucesso!</p>
+      <p class="position-relative formEnviado">Uhu! Message sent successfully</p>
     </ng-template>
   </div>
 </form>
