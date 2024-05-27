@@ -10,8 +10,14 @@ import { FooterComponent } from './footer/footer.component';
 import { SlideComponent } from './slide/slide.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './formulario/formulario.component';
-import { HttpClientModule } from '@angular/common/http';  
+import { HttpClientModule, HttpClient } from '@angular/common/http';  
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+// Função para carregar os arquivos de tradução via HTTP
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -28,7 +34,14 @@ import { HttpClientModule } from '@angular/common/http';
     BsDropdownModule.forRoot(),
     ButtonsModule.forRoot(),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory, // Usando a função de carregamento definida acima
+          deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

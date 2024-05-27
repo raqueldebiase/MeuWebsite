@@ -3,8 +3,8 @@
     <div class="row menu-top mt-3">
       <nav class="col-12">
         <ul class="menu-top-list">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#projects">{{ "projects" | translate }}</a></li>
+          <li><a href="#contacts">{{ "contacts" | translate }}</a></li>
           <li><a class="d-flex align-items-center gap-1 resume" href="https://read.cv/raqueldebiase" target="_blank">Resume<span class="material-symbols-outlined">
                 open_in_new
               </span></a></li>
@@ -12,4 +12,10 @@
       </nav>
     </div>
   </div>
+</div>
+
+<div class="translate-btn">
+  <button (click)="switchLanguage('en')">EN</button>
+  <button (click)="switchLanguage('pt')">PT</button>
+  <!-- Adicione botões para outros idiomas, se necessário -->
 </div>

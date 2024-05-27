@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+  constructor(private translate: TranslateService) {}
 
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    console.log('click funciona');
+  }
 }
