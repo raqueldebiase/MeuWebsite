@@ -2,7 +2,7 @@
   "projects": "Projects",
   "contacts": "Contacts",
   "hello": "Hello!",
-  "hello_message_paragraph1": "My name is Raquel De Biase, and I am a Front-end Developer dedicated to creating engaging digital experiences, with a focus on clean and functional code.",
+  "hello_message_paragraph1": "My name is <span class=\"meuNome\">Raquel De Biase</span>, and I am a Front-end Developer dedicated to creating engaging digital experiences, with a focus on clean and functional code.",
   "hello_message_paragraph2": "The intersection between Information Science and Art has always fascinated me. While one deals with data organization and analysis, front-end development focuses on interactive and visually appealing interfaces. These two fields meet in a terrain of interdisciplinarity, where aesthetics and functionality intertwine to create meaningful digital experiences, driving innovation and creative expression.",
   "hello_message_paragraph3": "Throughout my career, I have contributed to innovative and challenging projects, exploring various web development technologies. I am excited to share experiences and eager for new challenges. Feel free to check out my projects and learn more about my work!",
   "location": "Lisbon, Portugal.",
