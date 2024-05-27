@@ -2,53 +2,44 @@
   <div class="col-12 mt-3 my-md-3">
     <div class="row">
       <div class="col-12 col-md-6 coluna1">
-        <div class="d-grid ">
-          <label class="my-3">Your name <span class="material-symbols-outlined">
-              emergency
-            </span></label>
-          <input formControlName="name" type="text" id="nome" name="nome" placeholder="Insira aqui o seu nome" required>
+        <div class="d-grid">
+          <label class="my-3">{{ 'form.your_name' | translate }} <span class="material-symbols-outlined">emergency</span></label>
+          <input formControlName="name" type="text" id="nome" name="nome" placeholder="{{ 'form.your_name' | translate }}" required>
           <div *ngIf="form.controls['name'].hasError('required') && form.controls['name'].touched">
-            This field is required.
+            {{ 'form.required' | translate }}
           </div>
         </div>
-        <div class="d-grid ">
-          <label class="my-3">Your e-mail <span class="material-symbols-outlined">
-              emergency
-            </span></label>
-          <input formControlName="email" type="email" id="email" name="email" placeholder="Insira aqui o seu e-mail" required>
+        <div class="d-grid">
+          <label class="my-3">{{ 'form.your_email' | translate }} <span class="material-symbols-outlined">emergency</span></label>
+          <input formControlName="email" type="email" id="email" name="email" placeholder="{{ 'form.your_email' | translate }}" required>
           <div *ngIf="form.controls['email'].hasError('required') && form.controls['email'].touched">
-            This field is required.
+            {{ 'form.required' | translate }}
           </div>
         </div>
-        <div class="d-grid ">
-          <label class="my-3">What interested you? <span class="material-symbols-outlined">
-              emergency
-            </span></label>
-          <input formControlName="interest" type="text" id="interested" name="interested" placeholder="Insira aqui o motivo do seu contato" required>
+        <div class="d-grid">
+          <label class="my-3">{{ 'form.your_interest' | translate }} <span class="material-symbols-outlined">emergency</span></label>
+          <input formControlName="interest" type="text" id="interested" name="interested" placeholder="{{ 'form.your_interest' | translate }}" required>
           <div *ngIf="form.controls['interest'].hasError('required') && form.controls['interest'].touched">
-            This field is required.
+            {{ 'form.required' | translate }}
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 d-grid coluna2">
-        <label class="message my-3">Message <span class="material-symbols-outlined">
-            emergency
-          </span></label>
-        <textarea formControlName="message" id="mensagem" name="mensagem" rows="4" placeholder="Deixe aqui a sua mensagem" required></textarea>
+        <label class="message my-3">{{ 'form.message' | translate }} <span class="material-symbols-outlined">emergency</span></label>
+        <textarea formControlName="message" id="mensagem" name="mensagem" rows="4" placeholder="{{ 'form.message' | translate }}" required></textarea>
         <div *ngIf="form.controls['message'].hasError('required') && form.controls['message'].touched">
-          This field is required.
+          {{ 'form.required' | translate }}
         </div>
-
       </div>
     </div>
   </div>
-  <p style="font-size: 12px;"><span class="material-symbols-outlined">emergency</span> Required</p>
+  <p style="font-size: 12px;"><span class="material-symbols-outlined">emergency</span> {{ 'form.required_note' | translate }}</p>
   <div class="col-12 text-center mt-5">
     <ng-container *ngIf="!mostrarMensagem; else mensagemEnviada">
-      <button type="submit" [disabled]="!form.valid">Send</button>
+      <button type="submit" [disabled]="!form.valid">{{ 'form.submit' | translate }}</button>
     </ng-container>
     <ng-template #mensagemEnviada>
-      <p class="position-relative formEnviado">Uhu! Message sent successfully</p>
+      <p class="position-relative formEnviado">{{ 'form.success_message' | translate }}</p>
     </ng-template>
   </div>
 </form>

@@ -1,7 +1,24 @@
 {
   "projects": "Projects",
-  "contacts": "contacts",
-  "hello_message": "<p>My name is <span class=\"meuNome\">Raquel De Biase</span>, and I am a Front-end Developer dedicated to creating engaging digital experiences, with a focus on clean and functional code.<br> The intersection between Information Science and Art has always fascinated me. While one deals with data organization and analysis, front-end development focuses on interactive and visually appealing interfaces. These two fields meet in a terrain of interdisciplinarity, where aesthetics and functionality intertwine to create meaningful digital experiences, driving innovation and creative expression.<br> Throughout my career, I have contributed to innovative and challenging projects, exploring various web development technologies. I am excited to share experiences and eager for new challenges. Feel free to check out my projects and learn more",
-  "presentation": "apresentação",
-  "tec_meth": "tecnologias + métodos"
+  "contacts": "Contacts",
+  "hello": "Hello!",
+  "hello_message_paragraph1": "My name is Raquel De Biase, and I am a Front-end Developer dedicated to creating engaging digital experiences, with a focus on clean and functional code.",
+  "hello_message_paragraph2": "The intersection between Information Science and Art has always fascinated me. While one deals with data organization and analysis, front-end development focuses on interactive and visually appealing interfaces. These two fields meet in a terrain of interdisciplinarity, where aesthetics and functionality intertwine to create meaningful digital experiences, driving innovation and creative expression.",
+  "hello_message_paragraph3": "Throughout my career, I have contributed to innovative and challenging projects, exploring various web development technologies. I am excited to share experiences and eager for new challenges. Feel free to check out my projects and learn more about my work!",
+  "location": "Lisbon, Portugal.",
+  "tec_meth": "Technologies + Methodologies",
+  "day_to_day_work": "In my day-to-day work, I use a variety of technologies that allow me to create functional digital experiences, which together enable me to create complete solutions, from structuring and styling to interactivity and data manipulation. I am constantly updating and exploring new tools to ensure my projects are aligned with best practices.",
+  "other_contacts": "Or if you prefer:",
+  "footer_txt_1": "Project developed in Angular.",
+  "footer_txt_2": "Raquel De Biase. All rights reserved.",
+  "form": {
+    "your_name": "Your name",
+    "your_email": "Your e-mail",
+    "your_interest": "What interested you?",
+    "message": "Message",
+    "submit": "Send",
+    "required": "This field is required.",
+    "required_note": "Required",
+    "success_message": "Uhu! Message sent successfully"
+  }
 }

@@ -1,7 +1,24 @@
 {
   "projects": "Projetos",
   "contacts": "Contactos",
-  "hello_message": "<p>Meu nome é <span class=\"meuNome\">Raquel De Biase</span>, sou uma Front-end Developer dedicada a criar experiências digitais envolventes, com foco em código limpo e funcional. A intersecção entre Ciência da Informação e Arte sempre me fascinou. Enquanto uma lida com organização e análise de dados, o front-end se concentra nas interfaces interativas e visualmente atrativas. Esses dois campos se encontram em um terreno de interdisciplinaridade, onde estética e funcionalidade se entrelaçam para criar experiências digitais significativas, impulsionando a inovação e a expressão criativa.<br> Ao longo da minha carreira, contribuí em projetos inovadores e desafiadores, explorando diversas tecnologias do desenvolvimento web. Estou entusiasmada para compartilhar experiências e ansiosa por novos desafios. Sinta-se à vontade para ver meus projetos e conhecer mais sobre meu trabalho!</p>",
-  "presentation": "apresentação",
-  "tec_meth": "tecnologias + métodos"
+  "hello": "Olá!",
+  "hello_message_paragraph1": "Meu nome é Raquel De Biase, sou uma Front-end Developer dedicada a criar experiências digitais envolventes, com foco em código limpo e funcional.",
+  "hello_message_paragraph2": "A intersecção entre Ciência da Informação e Arte sempre me fascinou. Enquanto uma lida com organização e análise de dados, o front-end se concentra nas interfaces interativas e visualmente atrativas. Esses dois campos se encontram em um terreno de interdisciplinaridade, onde estética e funcionalidade se entrelaçam para criar experiências digitais significativas, impulsionando a inovação e a expressão criativa.",
+  "hello_message_paragraph3": "Ao longo da minha carreira, contribuí em projetos inovadores e desafiadores, explorando diversas tecnologias do desenvolvimento web. Estou entusiasmada para compartilhar experiências e ansiosa por novos desafios. Sinta-se à vontade para ver meus projetos e conhecer mais sobre meu trabalho!",
+  "location": "Lisboa, Portugal.",
+  "tec_meth": "Tecnologias + Métodos",
+  "day_to_day_work": "No meu dia a dia, utilizo uma variedade de tecnologias que me permitem criar experiências digitais funcionais, as quais, em conjunto, me possibilitam criar soluções completas, desde a estruturação e estilização até a interatividade e manipulação de dados. Estou constantemente atualizando e explorando novas ferramentas para garantir que meus projetos estejam alinhados com as melhores práticas.",
+  "other_contacts": "Ou se preferir:",
+  "footer_txt_1": "Projeto desenvolvido em Angular",
+  "footer_txt_2": "Raquel De Biase. Todos os direitos reservados.",
+  "form": {
+    "your_name": "Seu nome",
+    "your_email": "Seu e-mail",
+    "your_interest": "O que te interessou?",
+    "message": "Mensagem",
+    "submit": "Enviar",
+    "required": "Este campo é obrigatório.",
+    "required_note": "Obrigatório",
+    "success_message": "Uhu! Mensagem enviada com sucesso"
+  }
 }

@@ -8,16 +8,15 @@
   </div>
 </div>
 
-<div class="container-fluid about py-3  px-3 px-md-0" id="about">
+<div class="container-fluid about py-3 px-3 px-md-0" id="about">
   <div class="container">
     <div class="row mb-2 mb-md-3 about-txt">
       <div class="col-12 col-md-6 col-lg-8 my-2">
-        <h2 class="mt-3 mb-2 mt-md-5 mb-md-3" [innerHTML]="safeHelloMessage"></h2>
-        <p>My name is <span class="meuNome">Raquel De Biase</span>, and I am a Front-end Developer dedicated to creating engaging digital experiences, with a focus on clean and functional code.<br>
-          The intersection between Information Science and Art has always fascinated me. While one deals with data organization and analysis, front-end development focuses on interactive and visually appealing interfaces. These two fields meet in a terrain of interdisciplinarity, where aesthetics and functionality intertwine to create meaningful digital experiences, driving innovation and creative expression.<br>
-          Throughout my career, I have contributed to innovative and challenging projects, exploring various web development technologies. I am excited to share experiences and eager for new challenges. Feel free to check out my projects and learn more about my work!
-        </p>
-        <p class="mt-4"><span>🌍</span> Lisbon, Portugal.</p>
+        <h2 class="mt-3 mb-2 mt-md-5 mb-md-3">{{ 'hello' | translate }}</h2>
+        <p>{{ 'hello_message_paragraph1' | translate }}</p>
+        <p>{{ 'hello_message_paragraph2' | translate }}</p>
+        <p>{{ 'hello_message_paragraph3' | translate }}</p>
+        <p>🌍 {{ 'location' | translate }}</p>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0 about-img">
         <img src="../../assets/images/perfil.png" alt="imagem-de-perfil">
@@ -30,7 +29,7 @@
   <div class="container" id="projects">
     <div class="row pt-md-3 pb-md-0 ">
       <div class="col-12">
-        <h2 class="titulo-projetos">Projects</h2>
+        <h2 class="titulo-projetos">{{ 'projects' | translate }}</h2>
         <iframe title="shining" src="https://lottie.host/embed/f6d07745-a735-451c-b8a0-042201af7e9c/iOtePhZkgD.json"></iframe>
       </div>
     </div>
@@ -45,8 +44,8 @@
   <div class="container tecnologias">
     <div class="row ">
       <div class="col-12 pb-3 py-md-5 tec-txt">
-        <h2 class="text-center mb-4">technologies + methodologies</h2>
-        <p>In my day-to-day work, I use a variety of <b>technologies</b> that allow me to create functional digital experiences, which together enable me to create complete solutions, from structuring and styling to interactivity and data manipulation. I am constantly updating and exploring <b>new tools</b> to ensure my projects are aligned with best practices.</p>
+        <h2 class="text-center mb-4">{{ 'tec_meth' | translate }}</h2>
+        <p>{{ 'day_to_day_work' | translate }}</p>
       </div>
       <div class="col-12 py-5 py-md-5 tec-lista">
         <ul>
@@ -72,7 +71,7 @@
   <div class="container formulario mb-5 mb-md-0">
     <div class="row">
       <div class="col-12 ">
-        <h2>Did you like it?<br>Send me a hello 👋</h2>
+        <h2>{{ 'contacts' | translate }}</h2>
       </div>
       <div class="col-12 ">
         <app-formulario></app-formulario>
@@ -82,9 +81,7 @@
   <div class="container g-0 py-5 info-contactos">
     <div class="row d-flex justify-content-evenly gap-3">
       <div class="col-12 col-md-12 col-lg-8 outros-contatos">
-        <h2>
-          Or, if you prefer, I am also available here:
-        </h2>
+        <h2>{{ 'other_contacts' | translate }}</h2>
         <div class="d-flex menu-contatos">
           <nav>
             <ul>
@@ -102,7 +99,7 @@
         <h2>Social medias:</h2>
         <div>
           <div class="social-medias">
-            <ul class="">
+            <ul>
               <li class="github">
                 <a href="https://github.com/raqueldebiase" target="_blank">
                   <img src="../../assets/images/github.svg" alt="github"></a>

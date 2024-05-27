@@ -10,9 +10,13 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class ContentComponent implements OnInit {
   parallaxOffset: number = 0;
   parallax2Offset: number = 0;
-  safeHelloMessage!: SafeHtml;
+  safeHelloMessage: SafeHtml = '';
 
-  constructor(private translate: TranslateService, private sanitizer: DomSanitizer) {}
+  constructor(private translate: TranslateService, private sanitizer: DomSanitizer) {
+    // Set default language to 'pt' and use 'en' initially
+    translate.setDefaultLang('pt');
+    translate.use('en');
+  }
 
   ngOnInit() {
     this.loadTranslation();
